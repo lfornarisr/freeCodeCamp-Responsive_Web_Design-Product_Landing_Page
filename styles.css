@@ -5,12 +5,15 @@
 }
 
 :root {
-    --linear-gold-gradient: linear-gradient(90deg, rgba(173,146,0,1) 0%, rgba(221,186,0,1) 10%, rgba(255,215,0,1) 50%, rgba(221,186,0,1) 90%, rgba(173,146,0,1) 100%);
-    --clean-gold:#ffd700;
-    --radial-gold-gradient:radial-gradient(circle, #ffd700 10%, #ddba00 30%, #ad9200 60%, rgba(145,123,0,1) 100%);
+    --linear-gold-gradient: linear-gradient(90deg, #cca97a 5%, #f2c891 15%, #cca97a 30%, #a68963 50%, #cca97a 70%, #f2c891 85%, #cca97a 95%);
+    --clean-gold:#a68963;
+    --radial-gold-gradient: radial-gradient(circle, rgba(166,137,99,1) 0%, rgba(204,169,122,1) 20%, rgba(242,200,145,1) 50%, rgba(204,169,122,1) 80%, rgba(166,137,99,1) 100%);
     --light-black: #202020;
     --dark-white:#c8c8c8;
-    --prueba: #c49797;
+    --clean-silver: rgb(166,166,166);
+    --clean-bronze: rgb(163,126,73);
+    --linear-silver-gradient: linear-gradient(90deg, rgba(166,166,166,1) 5%, rgba(204,204,204,1) 15%, rgba(166,166,166,1) 30%, rgba(128,128,128,1) 50%, rgba(166,166,166,1) 70%, rgba(204,204,204,1) 85%, rgba(166,166,166,1) 95%);
+    --linear-bronze-gradient: linear-gradient(90deg, #a37e49 5%, #e3af66 15%, #a37e49 30%, #7d6038 50%, #a37e49 70%, #e3af66 85%, #a37e49 95%);
 }
 
 html {
@@ -146,7 +149,7 @@ main {
     font-family: inherit;
     height: 2rem;
     width: fit-content;
-    padding: 0 8px;
+    padding: 0 1rem;
     font-size: 1rem;
     font-weight: bold;
     color: #202020;
@@ -188,7 +191,6 @@ iframe {
 
 #pricing {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -197,4 +199,43 @@ iframe {
     width: calc(100%/3);
     background: var(--dark-white);
     color: var(--light-black);
+    text-align: center;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.product__name {
+    font-size: 1rem;
+    padding: 20px;
+    font-weight: 800;
+}
+
+.product__text {
+    margin: 10px 0;
+}
+
+.product__price {
+    margin: 2rem 0;
+    font-size: 1.6rem;
+}
+
+button {
+    margin: 20px 0;
+}
+
+.bronze {
+    background: var(--clean-bronze);
+    background: var(--linear-bronze-gradient);
+    background: #b9722d;
+    background: linear-gradient(90deg, rgba(185,114,45,1) 5%, rgba(210,141,71,1) 15%, rgba(185,114,45,1) 30%, rgba(144,89,35,1) 50%, rgba(185,114,45,1) 70%, rgba(210,141,71,1) 85%, rgba(185,114,45,1) 95%);
+}
+
+.silver {
+    background: var(--clean-silver);
+    background: var(--linear-silver-gradient);
+}
+
+.gold {
+    background: var(--clean-gold);
+    background: var(--linear-gold-gradient);
 }
