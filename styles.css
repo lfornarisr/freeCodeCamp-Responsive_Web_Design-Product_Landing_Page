@@ -39,7 +39,7 @@ li {
 #header {
     display: flex;
     justify-content: space-between;
-    margin: 0 2rem;
+    padding: 0 2rem;
     padding-top: 1rem;
     align-items: center;
     position: sticky;
@@ -148,7 +148,6 @@ main {
 #submit {
     
     background: var(--clean-gold);
-    box-shadow: 0 0 4px #D5B038;
 }
 
 .button {
