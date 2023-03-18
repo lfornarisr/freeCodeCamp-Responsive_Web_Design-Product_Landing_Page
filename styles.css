@@ -246,3 +246,22 @@ button {
     background: var(--clean-gold);
     background: var(--linear-gold-gradient);
 }
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-link {
+    font-size: 1.1rem;
+    margin: 10px 20px;
+}
+
+footer p {
+    font-size: 0.8rem;
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
