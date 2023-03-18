@@ -6,8 +6,8 @@
 
 :root {
     --linear-gold-gradient: linear-gradient(90deg, #cca97a 5%, #f2c891 15%, #cca97a 30%, #a68963 50%, #cca97a 70%, #f2c891 85%, #cca97a 95%);
-    --clean-gold:#a68963;
-    --radial-gold-gradient: radial-gradient(circle, rgba(166,137,99,1) 0%, rgba(204,169,122,1) 20%, rgba(242,200,145,1) 50%, rgba(204,169,122,1) 80%, rgba(166,137,99,1) 100%);
+    --clean-gold:#D5B038;
+    --radial-gold-gradient: radial-gradient(circle, rgba(165,125,2,1) 0%, rgba(205,153,0,1) 20%, rgba(213,176,56,1) 50%, rgba(205,153,0,1) 80%, rgba(165,125,2,1) 100%);
     --light-black: #202020;
     --dark-white:#c8c8c8;
     --clean-silver: rgb(166,166,166);
@@ -145,6 +145,12 @@ main {
     background-color: rgb(200, 200, 200);
 }
 
+#submit {
+    
+    background: var(--clean-gold);
+    box-shadow: 0 0 4px #D5B038;
+}
+
 .button {
     font-family: inherit;
     height: 2rem;
@@ -156,7 +162,6 @@ main {
     border: none;
     text-transform: uppercase;
     border-radius: 4px;
-    background: var(--linear-gold-gradient);
     cursor: pointer;
 }
 
@@ -203,7 +208,7 @@ iframe {
     background: var(--dark-white);
     color: var(--light-black);
     text-align: center;
-    border-radius: 4px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
